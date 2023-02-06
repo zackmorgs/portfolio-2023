@@ -1,6 +1,5 @@
-# HELLO REDDITORS! 
-I made this to fix the bug that ChatGPT and Twitch could not fix. Please help me! Clone the repository or just look at "src\pages\_document.js" to find where the bug is. For some reason handleBurgerClick() is not being called on click. I don't know why! 
-
+# Reddit Fixed it!
+Thanks to u/xD3I for helping a noob out with this project. I fixed it by creating a component in ./src/components. Apparently ./pages/_document.js is only for server side code.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
