@@ -8,26 +8,26 @@ export default function Navigation() {
         console.log("test")
     }
     return (
-        <nav id="nav-main">
+        <nav id="nav-main" className={navClosed ? 'is-closed' : 'is-open'}>
             <div id="nav-brand">
                 <Link href="/">
                     Z
                 </Link>
-                <button id="navbar_burger" onClick={handleBurgerClick} className={navClosed ? 'is-closed' : 'is-open'}>
+                <button id="navbar_burger" onClick={handleBurgerClick}>
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
             </div>
-            <ul>
+            <ul id="nav-list">
                 <li>
-                    <Link href="/contact">Contact</Link>
+                    <Link href="/contact" onClick={handleBurgerClick}>Contact</Link>
                 </li>
                 <li>
-                    <Link href="/blog">Blog</Link>
+                    <Link href="/blog" onClick={handleBurgerClick}>Blog</Link>
                 </li>
                 <li>
-                    <Link href="/music">Music</Link>
+                    <Link href="/music" onClick={handleBurgerClick}>Music</Link>
                 </li>
             </ul>
         </nav>

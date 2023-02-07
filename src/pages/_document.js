@@ -8,7 +8,9 @@ export default function Document() {
   return (
     <StrictMode>
       <Html lang="en">
-        <Head />
+        <Head>
+          <link rel="shortcut icon" href="/favicon.png" />
+        </Head>
         <body>
           <Main />
           <NextScript />
