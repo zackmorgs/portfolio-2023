@@ -1,12 +1,16 @@
 .main {
   color:black;
   text-align:center;
-  padding:1rem;
-
+  margin:1rem;
+  background:white;
+  padding-bottom:2rem;
+  box-shadow: 1px 1px 13px 0px #0000005c;
+  border-top-left-radius:0.5rem;
 }
 .profile {
   width:100%;
   height:auto;
+  border-top-left-radius: 0.5rem;
   /* border-radius:50%; */
 }
 .subheading {
