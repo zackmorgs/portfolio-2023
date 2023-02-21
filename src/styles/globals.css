@@ -14,7 +14,6 @@ html {
   height:100%;
   width:100%;
 }
-
 body{
   margin:0;
   padding:0;
@@ -62,6 +61,18 @@ body{
   bottom:-7.5rem;
   background-color:black;
 }
+#__next {
+  height:100%;
+  width:100%;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+
 .main {
   color:black;
   text-align:center;
@@ -120,7 +131,9 @@ p {
   position: relative;
   width: 3.25rem;
 }
-
+.is-open #navbar_burger {
+  background:#ff3463;
+}
 #navbar_burger span {
   background-color: currentColor;
   display: block;
@@ -168,8 +181,12 @@ p {
 .is-open #nav-list {
   display: block;
   position: absolute;
+  top:5rem;
   width: 100%;
   background:white;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 #nav-main ul a {
   font-family: 'Roboto', sans-serif;
@@ -190,11 +207,13 @@ p {
   font-family:'Roboto', sans-serif;
   text-transform:uppercase;
   border:2px solid #c9c9c9;
-  color:#0964e5;
-  background-color:white;
+  /* box-shadow: 1px 1px 13px 0px #0000005c; */
+
 }
 .btn-primary {
   color:white;
-  background:#0964e5;
+  background-color:#0964e5;
   box-shadow:0 2px 0 rgb(5 145 255 / 10%);
+  border:none;
 }
+

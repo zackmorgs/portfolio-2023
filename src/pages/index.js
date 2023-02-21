@@ -16,7 +16,7 @@ export default function Home() {
         <img className={styles.profile} src="/img/playing-guitar.jpg"></img>
         <h1>Zack Morgenthaler</h1>
         <p className={styles.subheading}>Programmer, Music Maker, and Artist</p>
-        <Link href="/about" className="btn">
+        <Link href="/about" className="btn btn-primary">
           About Me
         </Link>
       </main>

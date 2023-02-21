@@ -7,10 +7,13 @@ export default function Navigation() {
         setNav(!navClosed);
         console.log("test")
     }
+    function ensureNavClosed() {
+        setNav(true);
+    }
     return (
         <nav id="nav-main" className={navClosed ? 'is-closed' : 'is-open'}>
             <div id="nav-brand">
-                <Link href="/">
+                <Link href="/" onClick={ensureNavClosed}>
                     Z
                 </Link>
                 <button id="navbar_burger" onClick={handleBurgerClick}>

@@ -7,13 +7,11 @@
   box-shadow: 1px 1px 13px 0px #0000005c;
   border-top-left-radius:0.5rem;
 }
-
-.profile {
-  width: 100%;
-  height: auto;
-  /* border-radius:50%; */
-}
-
 .subheading {
-  margin: 0rem 0rem;
+  font-size: 1.25rem;
+}
+#about_profile {
+  width:100%;
+  height:auto;
+  /* margin:0 -1rem -4rem -2rem; */
 }
